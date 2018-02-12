@@ -19,6 +19,17 @@ module.exports = (graph, startNode, goalNode) => {
   shortestPathSoFar.set(startNode, 0);
 
   while(priorityQueue.length > 0){
+
+
+  // david - enqueue the start node
+  // david - initialize the shortest path so far
+
+  // david - while loop over the queue
+  // dequeue
+  // check for visited nodes
+  // check for goal node
+  // update shortest path so far
+  
     let currentNode = priorityQueue.dequeue().node;
     
     if(visitedNodes.has(currentNode))
@@ -50,17 +61,7 @@ module.exports = (graph, startNode, goalNode) => {
           priority: shortestPathSoFar.get(neighborNode),
         });
       }
-    } return null;
-  }
-
-
-  // david - enqueue the start node
-  // david - initialize the shortest path so far
-
-  // david - while loop over the queue
-  // dequeue
-  // check for visited nodes
-  // check for goal node
-  // update shortest path so far
-
+    }
+  } 
+  return null;
 }
