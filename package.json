@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^22.2.2"
+    "jest": "^22.2.2",
+    "js-priority-queue": "^0.1.5"
   }
 }

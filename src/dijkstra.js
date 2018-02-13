@@ -3,7 +3,6 @@
 const PriorityQueue = require('js-priority-queue');
 
 module.exports = (graph, startNode, goalNode) => {
-  let PriorityQueue = new PriorityQueue();
   let visitedNodes = newSet();
   let parentMap = new Map();
   let shortestPathSoFar = new Map();
